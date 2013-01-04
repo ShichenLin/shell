@@ -1,0 +1,174 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AUTOGRADE_TIMEOUT	driverhdrs.h	6;"	d
+BG	tsh.c	29;"	d	file:
+BUILTIN_BG	tsh.c	/^        BUILTIN_BG,$/;"	e	enum:cmdline_tokens::builtins_t	file:
+BUILTIN_FG	tsh.c	/^        BUILTIN_FG} builtins;$/;"	e	enum:cmdline_tokens::builtins_t	file:
+BUILTIN_JOBS	tsh.c	/^        BUILTIN_JOBS,$/;"	e	enum:cmdline_tokens::builtins_t	file:
+BUILTIN_NONE	tsh.c	/^        BUILTIN_NONE,$/;"	e	enum:cmdline_tokens::builtins_t	file:
+BUILTIN_QUIT	tsh.c	/^        BUILTIN_QUIT,$/;"	e	enum:cmdline_tokens::builtins_t	file:
+CC	Makefile	/^CC = \/usr\/bin\/gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -g -Werror$/;"	m
+CONVERT	fork.c	14;"	d	file:
+COURSE_NAME	driverhdrs.h	1;"	d
+DRIVER_TIMEOUT	config.h	11;"	d
+FG	tsh.c	28;"	d	file:
+FILES	Makefile	/^FILES = sdriver runtrace tsh myspin1 myspin2 myenv myintp myints mytstpp mytstps mysplit mysplitp mycat$/;"	m
+ITERS	config.h	45;"	d
+JOB_TIMEOUT	config.h	14;"	d
+LAB	driverhdrs.h	3;"	d
+MAXARGS	config.h	47;"	d
+MAXARGS	tsh.c	22;"	d	file:
+MAXBUF	config.h	46;"	d
+MAXBUF	runtrace.c	23;"	d	file:
+MAXJID	tsh.c	24;"	d	file:
+MAXJOBS	tsh.c	23;"	d	file:
+MAXLINE	tsh.c	21;"	d	file:
+MAXTRACES	config.h	48;"	d
+MAX_SLEEP	fork.c	12;"	d	file:
+PERLPROG	sdriver.c	39;"	d	file:
+PROMPT	config.h	49;"	d
+RIO_BUFSIZE	driverlib.h	22;"	d
+SA	driverlib.c	/^typedef struct sockaddr SA;$/;"	t	typeref:struct:sockaddr	file:
+SERVER_NAME	driverhdrs.h	4;"	d
+SERVER_PORT	driverhdrs.h	5;"	d
+ST	tsh.c	30;"	d	file:
+ST_INFILE	tsh.c	44;"	d	file:
+ST_NORMAL	tsh.c	43;"	d	file:
+ST_OUTFILE	tsh.c	45;"	d	file:
+SUBMITR_MAXBUF	driverlib.h	17;"	d
+Signal	tsh.c	/^*Signal(int signum, handler_t *handler) $/;"	f
+TRACEFILES	config.h	17;"	d
+UNDEF	tsh.c	27;"	d	file:
+__DRIVERLIB_H__	driverlib.h	12;"	d
+__wrap_fork	fork.c	/^pid_t __wrap_fork(void)$/;"	f
+addjob	tsh.c	/^addjob(struct job_t *job_list, pid_t pid, int state, char *cmdline) $/;"	f
+app_error	tsh.c	/^app_error(char *msg)$/;"	f
+argc	tsh.c	/^    int argc;               \/* Number of arguments *\/$/;"	m	struct:cmdline_tokens	file:
+argv	tsh.c	/^    char *argv[MAXARGS];    \/* The arguments list *\/$/;"	m	struct:cmdline_tokens	file:
+autograded	sdriver.c	/^int autograded = 0;         \/* Set only on the Autolab server (-A) *\/$/;"	v
+autoresult	sdriver.c	/^char autoresult[MAXBUF]; \/* Autolab autoresult string *\/  $/;"	v
+bg_job	tsh.c	/^void bg_job(char** argv)$/;"	f
+blankline	runtrace.c	/^int blankline(char *str)$/;"	f
+buf	myspin1.c	/^char buf[MAXBUF];$/;"	v
+buf	myspin2.c	/^char buf[MAXBUF];$/;"	v
+buf	mysplit.c	/^char buf[MAXBUF];$/;"	v
+buf	mysplitp.c	/^char buf[MAXBUF];$/;"	v
+buf	runtrace.c	/^char buf[MAXBUF];$/;"	v
+builtin_command	tsh.c	/^int builtin_command(struct cmdline_tokens* p_tok)$/;"	f
+builtins	tsh.c	/^        BUILTIN_FG} builtins;$/;"	m	struct:cmdline_tokens	typeref:enum:cmdline_tokens::builtins_t	file:
+builtins_t	tsh.c	/^    enum builtins_t {       \/* Indicates if argv[0] is a builtin command *\/$/;"	g	struct:cmdline_tokens	file:
+clean	runtrace.c	/^void clean() {$/;"	f
+clearjob	tsh.c	/^clearjob(struct job_t *job) {$/;"	f
+cmdline	tsh.c	/^    char cmdline[MAXLINE];  \/* command line *\/$/;"	m	struct:job_t	file:
+cmdline_tokens	tsh.c	/^struct cmdline_tokens {$/;"	s	file:
+command	runtrace.c	/^char command[MAXBUF];$/;"	v
+continue_job	tsh.c	/^void continue_job(struct job_t* p_job_entry, int is_bg)$/;"	f
+datafd	runtrace.c	/^int datafd[2];$/;"	v
+default_tracefiles	sdriver.c	/^static char *default_tracefiles[] = {TRACEFILES, NULL};$/;"	v	file:
+delete_tmpfiles	sdriver.c	/^void delete_tmpfiles()$/;"	f
+deletejob	tsh.c	/^deletejob(struct job_t *job_list, pid_t pid) $/;"	f
+diff_filtered_outfile	sdriver.c	/^char diff_filtered_outfile[MAXBUF];$/;"	v
+diff_raw_outfile	sdriver.c	/^char diff_raw_outfile[MAXBUF];$/;"	v
+driver_post	driverlib.c	/^int driver_post(char *userid, char *result, int autograded, char *status_msg) $/;"	f
+emit_file	sdriver.c	/^void emit_file(char *filename) $/;"	f
+eval	tsh.c	/^eval(char *cmdline) $/;"	f
+fg_job	tsh.c	/^void fg_job(char** argv)$/;"	f
+fgpid	tsh.c	/^fgpid(struct job_t *job_list) {$/;"	f
+getjobjid	tsh.c	/^struct job_t *getjobjid(struct job_t *job_list, int jid) $/;"	f
+getjobpid	tsh.c	/^*getjobpid(struct job_t *job_list, pid_t pid) {$/;"	f
+handler_t	tsh.c	/^typedef void handler_t(int);$/;"	t	file:
+infile	tsh.c	/^    char *infile;           \/* The input file *\/$/;"	m	struct:cmdline_tokens	file:
+init_driver	driverlib.c	/^int init_driver(char *status_msg) $/;"	f
+init_timeout	driverlib.c	/^void init_timeout(int timeout) {$/;"	f
+initjobs	tsh.c	/^initjobs(struct job_t *job_list) {$/;"	f
+jid	tsh.c	/^    int jid;                \/* job ID [1, 2, ...] *\/$/;"	m	struct:job_t	file:
+job_list	tsh.c	/^struct job_t job_list[MAXJOBS]; \/* The job list *\/$/;"	v	typeref:struct:job_t
+job_t	tsh.c	/^struct job_t {              \/* The job struct *\/$/;"	s	file:
+line	runtrace.c	/^char line[MAXBUF];$/;"	v
+listjobs	tsh.c	/^listjobs(struct job_t *job_list, int output_fd) $/;"	f
+main	mycat.c	/^int main() {$/;"	f
+main	myenv.c	/^int main() $/;"	f
+main	myintp.c	/^int main() $/;"	f
+main	myints.c	/^int main() $/;"	f
+main	myspin1.c	/^int main(int argc, char **argv) $/;"	f
+main	myspin2.c	/^int main(int argc, char **argv) $/;"	f
+main	mysplit.c	/^int main(int argc, char **argv) $/;"	f
+main	mysplitp.c	/^int main(int argc, char **argv) $/;"	f
+main	mytstpp.c	/^int main() $/;"	f
+main	mytstps.c	/^int main() $/;"	f
+main	runtrace.c	/^int main(int argc, char **argv) $/;"	f
+main	sdriver.c	/^int main(int argc, char **argv)$/;"	f
+main	test.c	/^int main()$/;"	f
+main	tsh.c	/^main(int argc, char **argv) $/;"	f
+maxjid	tsh.c	/^maxjid(struct job_t *job_list) $/;"	f
+modify_job_status	tsh.c	/^void modify_job_status(pid_t pid, int job_status)$/;"	f
+next_prompt	runtrace.c	/^int next_prompt(void)$/;"	f
+nextjid	tsh.c	/^int nextjid = 1;            \/* next job ID to allocate *\/$/;"	v
+num_iters	sdriver.c	/^int num_iters=ITERS;        \/* How many times to test each trace file *\/$/;"	v
+outfile	tsh.c	/^    char *outfile;          \/* The output file *\/$/;"	m	struct:cmdline_tokens	file:
+parseline	tsh.c	/^parseline(const char *cmdline, struct cmdline_tokens *tok) $/;"	f
+pid	tsh.c	/^    pid_t pid;              \/* job PID *\/$/;"	m	struct:job_t	file:
+pid2jid	tsh.c	/^pid2jid(pid_t pid) $/;"	f
+print_child_status	runtrace.c	/^void print_child_status()$/;"	f
+prompt	tsh.c	/^char prompt[] = "tsh> ";    \/* command line prompt (DO NOT CHANGE) *\/$/;"	v
+readable	runtrace.c	/^int readable(int fd, int secs) $/;"	f
+redirect	tsh.c	/^void redirect(struct cmdline_tokens* p_tok)\/\/, int mode)$/;"	f
+redirect_back	tsh.c	/^void redirect_back()$/;"	f
+ref_filtered_outfile	sdriver.c	/^char ref_filtered_outfile[MAXBUF];$/;"	v
+ref_raw_outfile	sdriver.c	/^char ref_raw_outfile[MAXBUF];$/;"	v
+rio_buf	driverlib.h	/^    char rio_buf[RIO_BUFSIZE]; \/* internal buffer *\/$/;"	m	struct:__anon1
+rio_bufptr	driverlib.h	/^    char *rio_bufptr;          \/* next unread byte in internal buf *\/$/;"	m	struct:__anon1
+rio_cnt	driverlib.h	/^    int rio_cnt;               \/* unread bytes in internal buf *\/$/;"	m	struct:__anon1
+rio_fd	driverlib.h	/^    int rio_fd;                \/* descriptor for this internal buf *\/$/;"	m	struct:__anon1
+rio_read	driverlib.c	/^static ssize_t rio_read(rio_t *rp, char *usrbuf, size_t n)$/;"	f	file:
+rio_readinitb	driverlib.c	/^static void rio_readinitb(rio_t *rp, int fd) $/;"	f	file:
+rio_readlineb	driverlib.c	/^static ssize_t rio_readlineb(rio_t *rp, void *usrbuf, size_t maxlen) $/;"	f	file:
+rio_t	driverlib.h	/^} rio_t;$/;"	t	typeref:struct:__anon1
+rio_writen	driverlib.c	/^static ssize_t rio_writen(int fd, void *usrbuf, size_t n) $/;"	f	file:
+runtrace	sdriver.c	/^int runtrace(char *tracefile)$/;"	f
+sandboxing	runtrace.c	/^int sandboxing = 0;$/;"	v
+sandboxing	sdriver.c	/^int sandboxing = 0;         \/* Enable sandboxing (-x) *\/$/;"	v
+saved_fd_in	tsh.c	/^static int saved_fd_in, saved_fd_out;$/;"	v	file:
+saved_fd_out	tsh.c	/^static int saved_fd_in, saved_fd_out;$/;"	v	file:
+sbuf	tsh.c	/^char sbuf[MAXLINE];         \/* for composing sprintf messages *\/$/;"	v
+shellargs	runtrace.c	/^char *shellargs = NULL;$/;"	v
+shellprog	runtrace.c	/^char *shellprog = ".\/tsh";$/;"	v
+shellprog	sdriver.c	/^char *shellprog = ".\/tsh";  \/* Name of test shell (-s) *\/$/;"	v
+sigalrm_handler	driverlib.c	/^void sigalrm_handler(int sig) {$/;"	f
+sigalrm_handler	myintp.c	/^void sigalrm_handler() $/;"	f
+sigalrm_handler	myints.c	/^void sigalrm_handler() $/;"	f
+sigalrm_handler	myspin1.c	/^void sigalrm_handler(int signum) $/;"	f
+sigalrm_handler	myspin2.c	/^void sigalrm_handler(int signum) $/;"	f
+sigalrm_handler	mysplit.c	/^void sigalrm_handler(int signum) $/;"	f
+sigalrm_handler	mytstpp.c	/^void sigalrm_handler() $/;"	f
+sigalrm_handler	runtrace.c	/^void sigalrm_handler(int sig) $/;"	f
+sigchld_handler	tsh.c	/^sigchld_handler(int sig) $/;"	f
+sigint_handler	tsh.c	/^sigint_handler(int sig) $/;"	f
+sigquit_handler	tsh.c	/^sigquit_handler(int sig) $/;"	f
+sigterm_handler	myspin1.c	/^void sigterm_handler(int signum)$/;"	f
+sigtstp_handler	tsh.c	/^sigtstp_handler(int sig) $/;"	f
+state	runtrace.c	/^char *state;$/;"	v
+state	tsh.c	/^    int state;              \/* UNDEF, BG, FG, or ST *\/$/;"	m	struct:job_t	file:
+status	sdriver.c	/^char status[MAXBUF];$/;"	v
+submitr	driverlib.c	/^int submitr(char *hostname,    \/* Server domain name *\/$/;"	f
+syncfd	myspin1.c	/^int syncfd;$/;"	v
+syncfd	runtrace.c	/^int syncfd[2];$/;"	v
+test_filtered_outfile	sdriver.c	/^char test_filtered_outfile[MAXBUF];$/;"	v
+test_raw_outfile	sdriver.c	/^char test_raw_outfile[MAXBUF];$/;"	v
+time	fork.c	/^struct timeval time;$/;"	v	typeref:struct:timeval
+tracefile	runtrace.c	/^char *tracefile = NULL;$/;"	v
+tsh_pid	tsh.c	/^static pid_t tsh_pid = 0;$/;"	v	file:
+unix_error	tsh.c	/^unix_error(char *msg)$/;"	f
+urlencode	driverlib.c	/^static int urlencode(unsigned char *src, unsigned char *dst)$/;"	f	file:
+usage	runtrace.c	/^void usage(char *msg)$/;"	f
+usage	sdriver.c	/^void usage(void) $/;"	f
+usage	tsh.c	/^usage(void) $/;"	f
+verbose	runtrace.c	/^int verbose = 0;$/;"	v
+verbose	sdriver.c	/^int verbose = 0;            \/* Global flag for verbose output (-V) *\/$/;"	v
+verbose	tsh.c	/^int verbose = 0;            \/* if true, print additional output *\/$/;"	v
+wait_fg	tsh.c	/^void wait_fg(pid_t pid)$/;"	f
