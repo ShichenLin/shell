@@ -1,9 +1,9 @@
 /* 
  * tsh - A tiny shell program with job control
  * 
- * <Name: 			Siyuan Hua>
- * <Andrew ID:		siyuanh>
- * <Email: 			siyuanh@andrew.cmu.edu>
+ * <Name:Siyuan Hua>
+ * <Andrew ID:siyuanh>
+ * <Email:siyuanh@andrew.cmu.edu>
  */
 #include <assert.h>
 #include <stdio.h>
