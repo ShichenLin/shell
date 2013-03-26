@@ -18,7 +18,7 @@ Trace files used by the driver
 ## config.h
 Header file for sdriver.c
 
-##
+## helper .c files
 mycat.c
 myenv.c
 myintp.c
